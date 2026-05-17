@@ -3,321 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Defense | Aarab Mourad</title>
+    <title>VIMO Project | Aarab Mourad — Royal Military Academy</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation latérale -->
-    <nav class="side-nav">
-        <div class="nav-logo">AM</div>
-        <ul>
-            <li><a href="#hero" class="nav-dot active" data-label="Accueil"></a></li>
-            <li><a href="#defense" class="nav-dot" data-label="La Défense"></a></li>
-            <li><a href="#erm" class="nav-dot" data-label="ERM"></a></li>
-            <li><a href="#ras-lab" class="nav-dot" data-label="RAS Lab"></a></li>
-            <li><a href="#meca" class="nav-dot" data-label="Section MECA"></a></li>
-            <li><a href="#projet" class="nav-dot" data-label="Mon Projet"></a></li>
-            <li><a href="#contact" class="nav-dot" data-label="Contact"></a></li>
-        </ul>
-    </nav>
+    <!-- Top bar -->
+    <header class="topbar">
+        <div class="topbar-left">
+            <span class="topbar-logo">AM</span>
+            <span class="topbar-sep">/</span>
+            <span class="topbar-text">Portfolio Defense 2026</span>
+        </div>
+        <nav class="topbar-nav">
+            <a href="#intro">Intro</a>
+            <a href="#defense">Defense</a>
+            <a href="#erm">ERM</a>
+            <a href="#ras">RAS Lab</a>
+            <a href="#meca">MECA</a>
+            <a href="#vimo">VIMO</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="topbar-right">
+            <a href="https://linkedin.com/in/aarab-mourad" target="_blank" class="topbar-btn">LinkedIn</a>
+        </div>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="section hero-section">
-        <div class="hero-overlay"></div>
+    <!-- HERO - Full screen cinematic -->
+    <section id="intro" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?w=1920&q=80" alt="Abstract gradient" class="hero-img">
+            <div class="hero-grain"></div>
+        </div>
         <div class="hero-content">
-            <div class="hero-badge">STAGE TFE 2026</div>
-            <h1 class="glitch" data-text="AARAB MOURAD">AARAB MOURAD</h1>
-            <p class="hero-subtitle">Ingénieur Industriel — Électricité & Automatisation</p>
-            <p class="hero-tagline">GPS-Denied UAV Localization | École Royale Militaire & VUB</p>
-            <div class="scroll-indicator">
-                <span>Découvrir</span>
-                <div class="scroll-arrow"></div>
+            <div class="hero-overline">Stage TFE — École Royale Militaire / VUB</div>
+            <h1>AARAB<br>MOURAD</h1>
+            <p class="hero-desc">Ingénieur Industriel en Électricité & Automatisation<br>GPS-Denied UAV Localization — Projet GRAND</p>
+            <div class="hero-meta">
+                <span>ISIB Bruxelles</span>
+                <span class="dot"></span>
+                <span>Master 2 — 2026</span>
+                <span class="dot"></span>
+                <span>Section MECA / RAS Lab</span>
             </div>
         </div>
-        <div class="hero-particles" id="particles"></div>
+        <div class="scroll-cta">
+            <div class="scroll-line"></div>
+            <span>Scroll</span>
+        </div>
     </section>
 
-    <!-- La Défense Belge -->
-    <section id="defense" class="section">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">01</span>
-                <h2>La Défense Belge</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="grid-layout">
-                <div class="card card-main">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2L3 7v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-9-5z"/>
-                        </svg>
-                    </div>
-                    <h3>Mission</h3>
-                    <p>La Défense belge protège l'intégrité du territoire national, contribue à la sécurité collective au sein de l'OTAN et de l'UE, et soutient la nation dans des missions humanitaires et de secours.</p>
+    <!-- SECTION: La Défense Belge -->
+    <section id="defense" class="panel">
+        <div class="panel-image">
+            <img src="https://images.unsplash.com/photo-1580752300992-559f8e56177b?w=1200&q=80" alt="Military operations" loading="lazy">
+            <div class="panel-image-overlay"></div>
+        </div>
+        <div class="panel-content">
+            <div class="tag">01 — Organisation</div>
+            <h2>La Défense Belge</h2>
+            <p class="lead">La Défense belge assure la protection du territoire national et contribue à la sécurité collective au sein de l'OTAN et de l'Union Européenne.</p>
+            <div class="info-blocks">
+                <div class="info-block">
+                    <h4>5 Composantes</h4>
+                    <p>Terre, Air, Marine, Médicale et Cyber Command — une force intégrée et modulaire.</p>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M19.07 4.93L4.93 19.07"/>
-                        </svg>
+                <div class="info-block">
+                    <h4>Plan STAR 2030</h4>
+                    <p>Security, Technology, Ambition, Resilience — investissement massif dans les nouvelles technologies et la R&D.</p>
+                </div>
+                <div class="info-block">
+                    <h4>Innovation</h4>
+                    <p>Drones, robotique, IA et systèmes autonomes pour un avantage technologique décisif sur le terrain.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE BREAK -->
+    <section class="image-break">
+        <img src="https://images.unsplash.com/photo-1562564055-71e051d33c19?w=1920&q=80" alt="Military academy" loading="lazy">
+        <div class="image-break-text">
+            <span class="image-break-quote">"Former les leaders technologiques de la Défense de demain"</span>
+        </div>
+    </section>
+
+    <!-- SECTION: ERM -->
+    <section id="erm" class="panel panel-reverse">
+        <div class="panel-image">
+            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80" alt="University research" loading="lazy">
+            <div class="panel-image-overlay"></div>
+        </div>
+        <div class="panel-content">
+            <div class="tag">02 — Institution</div>
+            <h2>École Royale Militaire</h2>
+            <p class="lead">Fondée en 1834, l'ERM est l'institution académique militaire de Belgique. Elle forme les futurs officiers et héberge des laboratoires de recherche de pointe.</p>
+            <div class="timeline-compact">
+                <div class="tl-item">
+                    <span class="tl-year">1834</span>
+                    <span class="tl-desc">Fondation de l'École Royale Militaire</span>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-year">2000+</span>
+                    <span class="tl-desc">Partenariat académique avec la VUB</span>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-year">2020</span>
+                    <span class="tl-desc">Création du RAS Lab (Robotics & Autonomous Systems)</span>
+                </div>
+                <div class="tl-item">
+                    <span class="tl-year">2024</span>
+                    <span class="tl-desc">Lancement du projet GRAND (GNSS-denied Navigation)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: RAS Lab -->
+    <section id="ras" class="full-section">
+        <div class="full-bg">
+            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1920&q=80" alt="Robotics lab" loading="lazy">
+            <div class="full-bg-overlay"></div>
+        </div>
+        <div class="full-content">
+            <div class="tag tag-light">03 — Laboratoire</div>
+            <h2>RAS Lab</h2>
+            <p class="lead lead-light">Robotics & Autonomous Systems — Le laboratoire de recherche en robotique et systèmes autonomes de l'ERM.</p>
+            <div class="columns-3">
+                <div class="col-card">
+                    <div class="col-card-number">01</div>
+                    <h4>Navigation Autonome</h4>
+                    <p>Terrestre et aérienne, GPS-denied, perception multi-capteurs</p>
+                </div>
+                <div class="col-card">
+                    <div class="col-card-number">02</div>
+                    <h4>Vision & Perception</h4>
+                    <p>SLAM, Visual Odometry, détection d'obstacles, fusion LiDAR-caméra</p>
+                </div>
+                <div class="col-card">
+                    <div class="col-card-number">03</div>
+                    <h4>Multi-Robots</h4>
+                    <p>Essaims de drones, coordination, planification collaborative</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: MECA -->
+    <section id="meca" class="panel">
+        <div class="panel-image">
+            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80" alt="Engineering and mechanics" loading="lazy">
+            <div class="panel-image-overlay"></div>
+        </div>
+        <div class="panel-content">
+            <div class="tag">04 — Section</div>
+            <h2>Section MECA</h2>
+            <p class="lead">La section Mécanique du RAS Lab se concentre sur la dynamique des systèmes autonomes, l'estimation d'état et le contrôle de véhicules non-pilotés.</p>
+            <div class="meca-grid">
+                <div class="meca-item">
+                    <span class="meca-icon">&#9670;</span>
+                    <div>
+                        <h5>Modélisation dynamique</h5>
+                        <p>Modèles physiques de drones, forces aérodynamiques, propulsion</p>
                     </div>
-                    <h3>Composantes</h3>
+                </div>
+                <div class="meca-item">
+                    <span class="meca-icon">&#9670;</span>
+                    <div>
+                        <h5>Estimation d'état</h5>
+                        <p>Filtres de Kalman, VIO, fusion IMU/caméra/moteurs</p>
+                    </div>
+                </div>
+                <div class="meca-item">
+                    <span class="meca-icon">&#9670;</span>
+                    <div>
+                        <h5>Contrôle</h5>
+                        <p>Régulation PID, contrôle adaptatif, stabilisation en vol</p>
+                    </div>
+                </div>
+                <div class="meca-item">
+                    <span class="meca-icon">&#9670;</span>
+                    <div>
+                        <h5>Capteurs embarqués</h5>
+                        <p>IMU, caméras stéréo, RPM moteurs, baromètre, magnétomètre</p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-row">
+                <span>ROS2</span><span>PX4</span><span>Python</span><span>C++</span><span>MATLAB</span><span>Gazebo</span><span>OpenCV</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- IMAGE BREAK 2 -->
+    <section class="image-break">
+        <img src="https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=1920&q=80" alt="Drone flying" loading="lazy">
+        <div class="image-break-text">
+            <span class="image-break-quote">"Quand le GPS n'est plus une option, l'innovation prend le relais"</span>
+        </div>
+    </section>
+
+    <!-- SECTION: VIMO Project -->
+    <section id="vimo" class="project-section">
+        <div class="project-hero">
+            <div class="tag">05 — Mon Projet</div>
+            <h2>VIMO</h2>
+            <p class="project-full-name">Visual-Inertial-Motor-based Odometry</p>
+            <p class="lead">Localisation de drone sans GPS en environnement indoor et urbain dense, par fusion de données visuelles, inertielles et motoriques.</p>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card project-card-wide">
+                <div class="project-card-img">
+                    <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=800&q=80" alt="Drone technology" loading="lazy">
+                </div>
+                <div class="project-card-body">
+                    <h4>Problématique</h4>
+                    <p>En environnement urbain dense ou indoor, le signal GPS est absent ou fortement dégradé. Les drones de reconnaissance doivent pouvoir se localiser de manière fiable et autonome pour accomplir leur mission.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-body">
+                    <h4>Approche innovante</h4>
+                    <p>VIMO fusionne trois sources d'information : la vision stéréo (caméra OAK-D Pro), les données inertielles (IMU), et une source originale — les RPM des moteurs — pour renforcer l'estimation d'état.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-card-body">
+                    <h4>Plateforme matérielle</h4>
                     <ul>
-                        <li>Composante Terre</li>
-                        <li>Composante Air</li>
-                        <li>Composante Marine</li>
-                        <li>Composante Médicale</li>
-                        <li>Cyber Command</li>
+                        <li>Drone Holybro X500 V6</li>
+                        <li>Pixhawk 6C / PX4 Autopilot</li>
+                        <li>UP4000 (ordinateur embarqué)</li>
+                        <li>OAK-D Pro (caméra stéréo)</li>
+                        <li>ESC BLHeli32 + DShot600</li>
                     </ul>
                 </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
-                        </svg>
-                    </div>
-                    <h3>Vision STAR</h3>
-                    <p>Le plan stratégique STAR (Security, Technology, Ambition, Resilience) vise à moderniser la Défense à l'horizon 2030 avec un investissement majeur dans les nouvelles technologies et la R&D.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                        </svg>
-                    </div>
-                    <h3>Innovation & R&D</h3>
-                    <p>La Défense investit dans les drones, la robotique, l'intelligence artificielle et les systèmes autonomes pour maintenir un avantage technologique décisif.</p>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- École Royale Militaire -->
-    <section id="erm" class="section">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">02</span>
-                <h2>École Royale Militaire</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Fondation — 1834</h3>
-                        <p>L'ERM est l'institution académique militaire de Belgique, formant les futurs officiers dans les domaines polytechniques et des sciences sociales & militaires.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Recherche de pointe</h3>
-                        <p>L'ERM héberge plusieurs départements de recherche reconnus internationalement : mécanique, communication, cryptographie, systèmes d'armes, et robotique.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Collaboration académique</h3>
-                        <p>En partenariat avec la VUB (Vrije Universiteit Brussel), l'ERM co-supervise des projets de recherche et accueille des stagiaires d'universités et hautes écoles belges.</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3>Projet GRAND</h3>
-                        <p>Le projet GRAND (GNSS-denied Resilient Autonomous Navigation for Defence) explore la navigation autonome sans GPS pour les systèmes de défense — cadre de mon stage TFE.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- RAS Lab -->
-    <section id="ras-lab" class="section">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">03</span>
-                <h2>RAS Lab</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="feature-grid">
-                <div class="feature-card highlight">
-                    <h3>Robotics & Autonomous Systems</h3>
-                    <p>Le RAS Lab (anciennement Dept. MECA) est le laboratoire de recherche en robotique et systèmes autonomes de l'ERM. Il développe des solutions technologiques pour les opérations de défense futures.</p>
-                </div>
-                <div class="feature-card">
-                    <h3>Domaines de recherche</h3>
+            <div class="project-card">
+                <div class="project-card-body">
+                    <h4>Stack logiciel</h4>
                     <ul>
-                        <li>Navigation autonome (terrestre & aérienne)</li>
-                        <li>Perception et fusion de capteurs</li>
-                        <li>Planification de trajectoire</li>
-                        <li>Systèmes multi-robots</li>
-                        <li>Vision par ordinateur</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>Équipements</h3>
-                    <ul>
-                        <li>Drones multi-rotors instrumentés</li>
-                        <li>Robots terrestres (UGV)</li>
-                        <li>Systèmes de motion capture</li>
-                        <li>Simulateurs Hardware-in-the-Loop</li>
-                        <li>Capteurs LiDAR, IMU, caméras stéréo</li>
-                    </ul>
-                </div>
-                <div class="feature-card">
-                    <h3>Projets actifs</h3>
-                    <ul>
-                        <li>GRAND — Navigation GNSS-denied</li>
-                        <li>AIDED — AI pour la détection</li>
-                        <li>Essaims de drones autonomes</li>
-                        <li>Localisation indoor</li>
+                        <li>ROS2 Jazzy — middleware robotique</li>
+                        <li>MAVROS — communication PX4</li>
+                        <li>BasaltVIO — Visual-Inertial Odometry</li>
+                        <li>Pipeline de synchronisation capteurs</li>
+                        <li>Foxglove / QGroundControl</li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Section MECA -->
-    <section id="meca" class="section">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">04</span>
-                <h2>Section MECA</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="split-layout">
-                <div class="split-text">
-                    <h3>Mécanique Appliquée & Systèmes Autonomes</h3>
-                    <p>La section MECA du RAS Lab se concentre sur la mécanique des systèmes autonomes : modélisation dynamique, estimation d'état, et contrôle de véhicules non-pilotés.</p>
-                    <div class="stats-row">
-                        <div class="stat">
-                            <span class="stat-number">15+</span>
-                            <span class="stat-label">Chercheurs</span>
+            <div class="project-card">
+                <div class="project-card-body">
+                    <h4>Résultats</h4>
+                    <div class="results-stats">
+                        <div class="result-stat">
+                            <span class="rs-num">&lt;5ms</span>
+                            <span class="rs-label">Sync capteurs</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">8</span>
-                            <span class="stat-label">Projets actifs</span>
+                        <div class="result-stat">
+                            <span class="rs-num">50Hz</span>
+                            <span class="rs-label">IMU rate</span>
                         </div>
-                        <div class="stat">
-                            <span class="stat-number">50+</span>
-                            <span class="stat-label">Publications</span>
+                        <div class="result-stat">
+                            <span class="rs-num">5</span>
+                            <span class="rs-label">Packages ROS2</span>
                         </div>
-                    </div>
-                    <div class="tech-stack">
-                        <span class="tech-tag">ROS2</span>
-                        <span class="tech-tag">PX4</span>
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">C++</span>
-                        <span class="tech-tag">MATLAB</span>
-                        <span class="tech-tag">Gazebo</span>
-                        <span class="tech-tag">OpenCV</span>
-                        <span class="tech-tag">VIO</span>
-                    </div>
-                </div>
-                <div class="split-visual">
-                    <div class="hex-grid">
-                        <div class="hex" data-label="Estimation">
-                            <div class="hex-inner">EKF</div>
-                        </div>
-                        <div class="hex" data-label="Vision">
-                            <div class="hex-inner">VIO</div>
-                        </div>
-                        <div class="hex" data-label="Contrôle">
-                            <div class="hex-inner">PID</div>
-                        </div>
-                        <div class="hex" data-label="Capteurs">
-                            <div class="hex-inner">IMU</div>
-                        </div>
-                        <div class="hex" data-label="Navigation">
-                            <div class="hex-inner">NAV</div>
-                        </div>
-                        <div class="hex" data-label="Moteurs">
-                            <div class="hex-inner">RPM</div>
+                        <div class="result-stat">
+                            <span class="rs-num">100%</span>
+                            <span class="rs-label">Pipeline validé</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- Mon Projet -->
-    <section id="projet" class="section">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">05</span>
-                <h2>Mon Projet — VIMO</h2>
-                <div class="section-line"></div>
+        <div class="project-architecture">
+            <h4>Architecture système</h4>
+            <div class="arch-flow">
+                <div class="arch-node">OAK-D Pro<span>Stéréo + Depth</span></div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">BasaltVIO<span>Visual-Inertial</span></div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node highlight-node">VIMO Fusion<span>EKF + RPM</span></div>
+                <div class="arch-arrow">&rarr;</div>
+                <div class="arch-node">PX4 EKF2<span>Position estimate</span></div>
             </div>
-            <div class="project-showcase">
-                <div class="project-header-card">
-                    <h3>Visual-Inertial-Motor-based Odometry</h3>
-                    <p class="project-subtitle">Localisation de drone sans GPS en environnement indoor/dégradé</p>
-                </div>
-                <div class="project-details">
-                    <div class="detail-card">
-                        <h4>Problématique</h4>
-                        <p>En environnement urbain dense ou indoor, le signal GPS est absent ou dégradé. Comment permettre à un drone de se localiser de manière fiable et autonome ?</p>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Approche VIMO</h4>
-                        <p>Fusion innovante de données visuelles (caméra stéréo), inertielles (IMU) et motoriques (RPM des moteurs) pour une estimation d'état robuste sans dépendance GPS.</p>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Plateforme</h4>
-                        <p>Drone X500 V6 équipé d'un Pixhawk 6C (PX4), d'un ordinateur embarqué UP4000, et d'une caméra OAK-D Pro pour la vision stéréo.</p>
-                    </div>
-                    <div class="detail-card">
-                        <h4>Résultats</h4>
-                        <p>Pipeline ROS2 complet validé : synchronisation capteurs &lt;5ms, acquisition RPM fonctionnelle, Visual-Inertial Odometry opérationnel.</p>
-                    </div>
-                </div>
-                <div class="project-tech">
-                    <h4>Stack Technique</h4>
-                    <div class="tech-pills">
-                        <span>ROS2 Jazzy</span>
-                        <span>PX4 Autopilot</span>
-                        <span>MAVROS</span>
-                        <span>BasaltVIO</span>
-                        <span>Python</span>
-                        <span>OAK-D Pro</span>
-                        <span>DShot600</span>
-                        <span>BLHeli32</span>
-                        <span>Foxglove</span>
-                        <span>QGroundControl</span>
-                    </div>
-                </div>
+            <div class="arch-flow arch-flow-sub">
+                <div class="arch-node">IMU 50Hz<span>ICM-42688-P</span></div>
+                <div class="arch-arrow">&nearr;</div>
+                <div class="arch-node">RPM Motors<span>DShot / BLHeli32</span></div>
+                <div class="arch-arrow">&nearr;</div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <div class="section-container">
-            <div class="section-header">
-                <span class="section-number">06</span>
-                <h2>Contact</h2>
-                <div class="section-line"></div>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card">
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="contact-inner">
+            <div class="tag">06 — Contact</div>
+            <h2>Restons en contact</h2>
+            <div class="contact-details">
+                <div class="contact-identity">
                     <h3>Aarab Mourad</h3>
-                    <p>Étudiant ingénieur industriel — Master en Électricité & Automatisation</p>
-                    <p>ISIB (Institut Supérieur Industriel de Bruxelles)</p>
+                    <p>Étudiant ingénieur industriel<br>Master en Électricité & Automatisation<br>ISIB — Bruxelles</p>
                 </div>
                 <div class="contact-links">
-                    <a href="mailto:aarab.mourad.pro@gmail.com" class="contact-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+                    <a href="mailto:aarab.mourad.pro@gmail.com">
+                        <span class="cl-icon">@</span>
                         <span>aarab.mourad.pro@gmail.com</span>
                     </a>
-                    <a href="tel:+32456320311" class="contact-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                    <a href="tel:+32456320311">
+                        <span class="cl-icon">T</span>
                         <span>+32 456 32 03 11</span>
                     </a>
-                    <a href="https://linkedin.com/in/aarab-mourad" target="_blank" class="contact-link">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                    <a href="https://linkedin.com/in/aarab-mourad" target="_blank">
+                        <span class="cl-icon">in</span>
                         <span>linkedin.com/in/aarab-mourad</span>
                     </a>
                 </div>
@@ -326,7 +330,10 @@
     </section>
 
     <footer>
-        <p>Portfolio Defense &mdash; Aarab Mourad &mdash; 2026</p>
+        <div class="footer-inner">
+            <span>Aarab Mourad — 2026</span>
+            <span>École Royale Militaire / VUB — Projet GRAND</span>
+        </div>
     </footer>
 
     <script src="script.js"></script>
