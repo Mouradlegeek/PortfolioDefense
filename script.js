@@ -1,5 +1,9 @@
 // Scroll reveal
-const revealElements = document.querySelectorAll('.panel-content, .full-content, .canvas-header, .bmc-grid, .swot-header, .swot-grid, .swot-conclusion, .contact-inner');
+const revealElements = document.querySelectorAll(
+    '.panel-content, .full-content, .canvas-header, .bmc-table, ' +
+    '.swot-header, .swot-matrix, .swot-conclusion, ' +
+    '.finance-header, .finance-content, .finance-analysis, .contact-inner'
+);
 
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -7,7 +11,7 @@ const revealObserver = new IntersectionObserver((entries) => {
             entry.target.classList.add('visible');
         }
     });
-}, { threshold: 0.15 });
+}, { threshold: 0.1 });
 
 revealElements.forEach(el => revealObserver.observe(el));
 
