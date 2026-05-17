@@ -1,5 +1,5 @@
 // Scroll reveal
-const revealElements = document.querySelectorAll('.panel-content, .full-content, .project-hero, .project-grid, .project-architecture, .contact-inner');
+const revealElements = document.querySelectorAll('.panel-content, .full-content, .canvas-header, .bmc-grid, .swot-header, .swot-grid, .swot-conclusion, .contact-inner');
 
 const revealObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
